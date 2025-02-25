@@ -11,6 +11,8 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 85px;
+    background-image: linear gradient(to right, #ff6600, #ffcc00);
+
 }
 
 .loginBox {
