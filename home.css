@@ -1,0 +1,1324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+*{
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+input, button, select, textarea {
+  appearance: none;
+}
+
+
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+
+.header_container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: whitesmoke;
+}
+
+
+#brand_name {
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px red;
+}
+
+
+#tag_line {
+  font-size: 1em;
+  color: black;
+} */
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-top: 60px;
+}
+
+.header_container {
+  width: 100%;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: whitesmoke;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+#brand_name {
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px red;
+}
+
+#tag_line {
+  font-size: large;
+  color: black;
+}
+
+
+.navbar_container {
+  background-color: blue;
+  width: 100%;
+  padding: 0 15px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+
+#search_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+
+#search {
+  width: 200px;
+  height: 29px;
+  flex-grow: 1;
+}
+
+
+#search::placeholder {
+  font-size: large;
+  opacity: 0.9;
+}
+
+
+#btn_search {
+  margin-top: 2px;
+  width: 85px;
+  height: 32px;
+  background-color: white;
+  font-size: large;
+}
+
+
+#btn_search:hover {
+  background-color: chartreuse;
+  color: red;
+}
+
+
+.hamburger {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+
+#menu_list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+}
+
+
+#menu_list li {
+  color: white;
+}
+
+
+#menu_list li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+#menu_list li a:hover {
+  color: red;
+}
+
+
+section {
+  width: 100%;
+  height: 1572px;
+  float: left;
+  box-sizing: border-box;
+  border-width: 2px;
+  padding: 20px;
+  /* border: 2px solid red; */
+}
+
+
+#store_address {
+  float: left;
+  font-size: large;
+  font-family: sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+
+#store_mob_no {
+  float: right;
+  font-size: large;
+  font-family: sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+
+#popular_sweets_box {
+  padding: 10px;
+  text-align: center;
+}
+
+
+#famous_sweets {
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+
+.sweets_photos {
+  max-width: 100%;
+  height: auto;
+  margin: 5px;
+}
+
+.demo1, .demo2, .demo3, .demo4, .demo5, .demo6 {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  min-width: 100px;
+  min-height: 138px;
+}
+
+
+#sweet_rate_list {
+  width: 550px;
+  height: 509px;
+  float: right;
+  margin-top: 30px;
+  border-color: black;
+  border-radius: 2px;
+  border-style: solid;
+}
+
+
+#sweet_name_rate_header {
+  width: 380px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: large;
+  box-sizing: border-box;
+}
+
+
+#sweet_price_rate_header {
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: large;
+  box-sizing: border-box;
+}
+
+
+#rate_content {
+  background-color: blue;
+}
+
+
+#sweets_item_names {
+  padding-bottom: 45px;
+  color: white;
+  font-size: larger;
+  font-style: normal;
+  font-family: sans-serif;
+  box-sizing: border-box;
+
+}
+
+
+#rupees_coloring {
+  padding-bottom: 45px;
+  color: white;
+  font-size: larger;
+  font-style: normal;
+  font-family: sans-serif;
+  box-sizing: border-box;
+
+}
+
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  flex-wrap: nowrap; 
+  align-items: stretch;
+}
+
+#form_box, #abt_us {
+  width: 65%; 
+  min-width: 350px;
+  padding: 20px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  height: 100%;
+}
+
+
+#abt_us{
+  width: 40%;
+}
+
+
+#paragraphhing {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  text-align: justify;
+  line-height: 1.5;
+  flex-grow: 1; 
+  overflow: hidden;
+}
+
+
+textarea {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ccc;
+  padding: 4px;
+  font-size: medium;
+  box-sizing: border-box;
+  resize: none;
+  overflow: auto;
+}
+
+#order_input {
+  font-size: medium;
+  width: 100%;
+  height: 30px;
+  padding: 4px;
+}
+
+hr {
+  width: 50%;
+  margin: 10px auto;
+}
+
+
+#m_sweets {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+#more_sweets {
+  font-family: sans-serif;
+  margin-top: 40px;
+  font-size: x-large;
+}
+
+
+.sweets {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+
+.first_sweet {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.sweets_price_bottom {
+  margin-top: 10px;
+}
+
+
+#more_sweet_photos {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 1px solid black;
+}
+
+
+#more_buy_btn {
+  margin-top: 8px;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+
+}
+
+.first_sweet a {
+  text-decoration: none;
+  color: white;
+}
+
+#more_buy_btn:hover {
+  background-color: lawngreen;
+  color: chocolate;
+}
+
+
+#sweets_paragraph{
+  margin-top: 5px;
+}
+
+
+
+footer {
+  width: 100%;
+  background-color: rgb(4, 4, 4);
+  box-sizing: border-box;
+  border-style: solid;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+#contact_us {
+  width: 33.34%;
+  color: white;
+  font-size: medium;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  line-height: 30px;
+  padding: 10px;
+}
+
+
+#contact_info {
+  font-size: larger;
+  color: white;
+  padding: 5px 0;
+}
+
+
+#developer_info {
+  width: 33.34%;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+  align-content: center;
+}
+
+
+#social_link {
+  width: 33.34%;
+  color: white;
+  box-sizing: border-box;
+  line-height: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+
+#social_logos,
+#modifying_social_logos {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+
+@media screen and (max-width: 440px) {
+
+  *{
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  
+  input, button, select, textarea {
+    appearance: none;
+  }
+
+
+  .header_container {
+    flex-direction: column !important;
+    align-items: flex-start;
+  }
+
+
+  .navbar_container {
+    width: 100%;
+  }
+
+
+  #menu_list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: blue;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+
+  #menu_list.show {
+    display: flex;
+  }
+
+
+  #menu_list li {
+    padding: 10px 0;
+  }
+
+
+  #menu_list li a {
+    display: block;
+    width: 100%;
+  }
+
+
+  .hamburger {
+    display: inline-block;
+  }
+
+
+  #store_mob_no {
+    float: left;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+
+
+  #popular_sweets_box {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+
+  #famous_sweets {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+
+  .sweets_photos {
+    width: calc(50% - 24px);
+    margin: 10px;
+    box-sizing: border-box;
+    height: auto;
+    
+  }
+
+
+  #sweet_rate_list{
+  
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 1; 
+    display: block; 
+    clear: both;
+
+  }
+
+
+  #sweet_name_rate_header{
+    width: 55%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: large;
+    box-sizing: border-box;
+  }
+
+  #sweet_price_rate_header{
+    width: 45%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: large;
+    box-sizing: border-box;
+  }
+
+
+  #rate_content{
+    background-color: blue;
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+  }
+
+
+  #sweets_item_names{
+    margin-top: 0px;
+    color: white;
+    font-size: large;
+    font-style: normal;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding-top: 5px;
+  }
+
+
+  #rupees_coloring{
+    padding-top: 10px;
+    color: white;
+    font-size: larger;
+    font-style: normal;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+
+
+  #container {
+    width: 100%;
+    display: block;
+    clear: both;
+  }
+
+
+  #form_box {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    display: block; 
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    position: relative;
+    margin-top: 20px; 
+    z-index: 2; 
+    background-color: white;
+    clear: both;
+
+  }
+
+
+  #order_btn {
+    width: 100%;
+    height: 34px;
+    text-align: center;
+    margin-left: 0px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+  }
+
+
+  #order_btn:hover {
+    background-color: chartreuse;
+    color: red;
+  }
+
+
+  #abt_us {
+    width: 100%; 
+    /* max-width: 100%;  */
+    padding: 20px;
+    margin: 30px auto 0 auto; 
+    border: 2px solid black; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    position: relative;
+    z-index: 3;
+  }
+
+
+  #paragraphhing{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: justify;
+    line-height: 1.5;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+
+
+  textarea{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 4px;
+    font-size: medium;
+    box-sizing: border-box;
+    resize: none;
+    overflow: auto;
+  }
+
+
+  #order_input{
+    font-size: medium;
+    width: 100%;
+    height: 30px;
+    padding: 4px;
+  }
+
+
+  hr{
+    width: 50%;
+    margin: 10px auto;
+  }
+
+
+  #m_sweets{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
+    top: 10px;
+  }
+
+
+  #more_sweets{
+    font-family: sans-serif;
+    font-size: x-large;
+    margin-top: 28px;
+  }
+
+
+  .sweets{
+    width: 100%;
+    max-width: 550px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    margin-top: 10px;
+    padding: 0;
+    background-size:cover;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+
+  .first_sweet{
+    border: none;
+    background-size:cover;
+    object-fit: cover;
+    float: left;
+    position: relative;
+    /* border: 2px solid red; */
+    padding-top: 5px;
+    width: 100%;
+    max-width: 2750px;
+    height: 310px;
+
+    -webkit-animation: slide 15s infinite;
+
+    -o-animation: slide 15s infinite;
+
+    -moz-animation: slide 15s infinite;
+
+    animation: slide 15s infinite;
+
+  }
+
+  @-webkit-keyframes slide{
+    0%{
+      top: 0;
+      left: 0;
+
+    }
+    
+    20%{
+      top: 0;
+      left: -375px;
+    }
+    
+    40%{
+      top: 0;
+      left: -762px;
+    }
+    
+    60%{
+      top: 0;
+      left: -1135px;
+    }
+    
+    80%{
+      top: 0;
+      left: -1520px;
+    }
+    
+    100%{
+      top: 0;
+      left: 0;
+    }
+  }
+
+
+  @-o-keyframes slide{
+    0%{
+      top: 0;
+      left: 0;
+
+    }
+    
+    20%{
+      top: 0;
+      left: -375px;
+    }
+    
+    40%{
+      top: 0;
+      left: -762px;
+    }
+    
+    60%{
+      top: 0;
+      left: -1135px;
+    }
+    
+    80%{
+      top: 0;
+      left: -1520px;
+    }
+    
+    100%{
+      top: 0;
+      left: 0;
+    }
+  }
+
+
+  @-moz-keyframes slide{
+    0%{
+      top: 0;
+      left: 0;
+
+    }
+    
+    20%{
+      top: 0;
+      left: -375px;
+    }
+    
+    40%{
+      top: 0;
+      left: -762px;
+    }
+    
+    60%{
+      top: 0;
+      left: -1135px;
+    }
+    
+    80%{
+      top: 0;
+      left: -1520px;
+    }
+    
+    100%{
+      top: 0;
+      left: 0;
+    }
+  }
+
+
+  @keyframes slide{
+    0%{
+      top: 0;
+      left: 0;
+
+    }
+    
+    20%{
+      top: 0;
+      left: -375px;
+    }
+    
+    40%{
+      top: 0;
+      left: -762px;
+    }
+    
+    60%{
+      top: 0;
+      left: -1135px;
+    }
+    
+    80%{
+      top: 0;
+      left: -1520px;
+    }
+    
+    100%{
+      top: 0;
+      left: 0;
+    }
+  }
+
+
+  #more_sweet_photos{
+    width: 100%;
+    max-width: 1000px;
+    height: 210px;
+    float: left;
+  }
+
+
+  .first_sweet p {
+    margin: 10px auto;
+  }
+
+
+  .first_sweet a {
+    text-decoration: none;
+  }
+
+
+  #more_buy_btn{
+    font-size: 18px;
+    font-weight: bold;
+    width: 250px;
+    height: 32px;
+  }
+
+
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 2795px;
+  }
+
+
+  #contact_us,
+  #developer_info,
+  #social_link {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
+
+
+  #contact_us{
+    color:chartreuse;
+    margin-bottom: 10px;
+  }
+
+
+  #developer_info {
+    margin-top: 10px;
+  }
+
+
+  #social_logos,
+  #modifying_social_logos {
+    width: 45px;
+    height: 45px;
+    margin: 12px;
+  }
+
+}
+
+
+
+
+@media only screen and (min-width:992px) and (max-width:1921px){
+  
+
+  .header_container {
+    padding: 15px 30px;
+}
+
+#brand_name {
+    font-size: 32px;
+}
+
+#tag_line {
+    font-size: 18px;
+}
+
+  .navbar_container{
+    width: 100%;
+    height: 50px;
+  }
+
+
+  .search_container{
+    width: 50%;
+    display: inline;
+  }
+
+  #search{
+    font-size: medium;
+    padding-left: 5px;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+
+
+  #search::placeholder {
+    font-size: large;
+    opacity: 0.9;
+    padding-left: 5px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+
+  #menu_list{
+    width: 50%;
+    justify-content: space-between;
+
+  }
+
+  section{
+    width: auto;
+  
+  }
+
+
+  #store_address{
+    margin-top: 0px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-style: normal;
+
+  }
+
+
+  #store_mob_no {
+    margin-top: 0px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-style: normal;
+  
+  }
+  
+
+  #popular_sweets_box{
+    width: 59%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Times New Roman', Times, serif;
+    border: 2px solid black;
+    background-color: black;
+    text-align: center;
+  }
+
+
+  #famous_sweets{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+
+  }
+
+
+  .sweets_photos_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 5px;
+    justify-content: center;
+    
+    
+  }
+
+
+  .sweets_photos{
+    width: 95%;
+    height: 180px;
+    border-radius: 10px;
+    
+  }
+
+  
+
+  #sweet_rate_list {
+    width: 40%;
+    margin-top: -668px;
+    height: 668px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+
+  #sweet_name_rate_header {
+    width: 20%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: large;
+    box-sizing: border-box;
+    margin-right: 50px;
+}
+
+
+  #sweet_price_rate_header{
+    width: 21%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: large;
+    box-sizing: border-box;
+    margin-left: 40px;
+
+}
+
+
+  #sweets_item_names{
+    gap: 5px;
+    justify-content: space-between;
+}
+
+
+  #container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+  #form_box {
+  width: 59%; 
+  min-width: 350px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%; 
+}
+
+  #form_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+  #order_btn{
+  width: 350px;
+  height: 34px;
+  text-align: center;
+  margin-left: 150px;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #ff6600;
+  color: white;
+}
+
+
+  #order_btn:hover{
+  background-color: chartreuse;
+  color: red;
+}
+
+
+
+  #abt_us{
+  min-width: 350px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 424px;
+  margin-top: 9px;
+}
+
+  #abt_us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+  #paragraphhing{
+  flex-wrap: wrap;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium; 
+  word-wrap: break-word;
+}
+
+
+  .sweets{
+  margin-top: 10px;
+  padding: 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: nowrap;
+  
+}
+
+
+  .first_sweet{
+  width: 20%;
+  height: 310px;
+  flex-wrap: nowrap;
+  
+  
+}
+
+
+  #more_sweet_photos{
+  height: 200px;
+  flex-wrap: nowrap;
+  border: none;
+}
+
+
+  #sweets_paragraph{
+  margin-top: 5px;
+}
+
+
+  .sweets_price_bottom {
+  margin-top: 30px;
+  font: larger;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+
+  footer{
+    width: 100%;
+}
+
+
+  #developer_info{
+    padding-left: 20px;
+    
+}
+
+
+}
+
+
+
+@media screen and (max-width: 991px) {
+  .sweets_photos_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto;
+    gap: 10px;
+    width: 90%; 
+    max-width: 400px;
+    padding: 15px;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+}
+
+
+.sweets_photos {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+
+
+}
+
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- <script src="./script.js"></script> -->
+
+</head>
+<body>
+
+    <div class="loginBox">
+        
+        <h1 id="heading">Sign In</h1>
+
+        <form id="loginForm"  action="insert_data.php" method="post">
+            
+            <label for="first_field">Username:</label>
+            <input type="text" id="user_name" name="usernoonaam" placeholder="Enter Username" required /><br>
+            
+            <label for="second_field">Password:</label>
+            <input type="password" id="pass_word" name="usernoopassword" placeholder="Enter Password" required /><br>
+            
+            <button type="submit" id="submit_btn" value="submit">Sign In</button>
+
+        </form>
+
+        <div class="links">
+            <a href="./forget_password.html">Forgot your password?</a>
+            <a href="./create_account.html">Don't have an account?</a>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.google.com" target="_blank">
+                <img src="./google.webp" alt="Google" class="icon">
+            </a>
+            <a href="https://www.github.com" target="_blank">
+                <img src="./github.webp" alt="GitHub" class="icon">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="./facebook.webp" alt="Facebook" class="icon">
+            </a>
+            <a href="https://www.telegram.org" target="_blank">
+                <img src="./telegram.webp" alt="Telegram" class="icon">
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>

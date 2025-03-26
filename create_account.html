@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./create_account.css">
+
+    <!-- <script src="./create.js" defer></script> -->
+
+</head>
+<body>
+    
+    <div class="create_account">
+        <h1 class="main_heading">Create Account</h1>
+
+        <form id="createAccountForm" action="create_account.php" method="post">
+            <label for="first_field">Username:</label>
+            <input type="text" id="first_field" name="usernooname" placeholder="Enter Username">
+
+            <label for="second_field">Email:</label>
+            <input type="email" id="second_field" name="usernooemailing" placeholder="Enter Email">
+
+            <label for="third_field">Password:</label>
+            <input type="password" id="third_field" name="usernoopassword" placeholder="Enter Password">
+
+            <label for="fourth_field">Confirm Password:</label>
+            <input type="password" id="fourth_field" name="usernooconfirmpassword" placeholder="Confirm Password">
+
+            <button type="submit" id="submit_btn" value="submit">Submit</button>
+        </form>
+
+        <div class="back_link">
+            <a href="./index.html">Back to Log in</a>
+        </div>
+    </div>
+
+</body>
+</html>

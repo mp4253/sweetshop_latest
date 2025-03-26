@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Sweetshop - The Best Sweets & Bakery</title>
+  <link rel="stylesheet" href="home.css" />
+  <script src="home.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header_container">
+      <h1 id="brand_name">Sweetshop.com</h1>
+      <p id="tag_line">The world's largest sweet & bakery shops.</p>
+    </div>
+  </header>
+
+  <nav class="navbar_container">
+    
+    <div id="search_container">
+      
+      <form>
+        <input type="search" id="search" placeholder="Search sweets items" />&nbsp;
+        <input type="submit" id="btn_search" value="Search" />
+      </form>
+
+      <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+    
+    </div>
+
+    <ul id="menu_list">
+      <li><a href="./home.html" onclick="navigate('Home')">Home</a></li>
+      <li><a href="./sweets.html" onclick="navigate('Sweets')">Sweets</a></li>
+      <!-- <li><a href="#" onclick="navigate('Beverages')">Beverages</a></li> -->
+      <li><a href="#abt_us" onclick="navigate('About Us')">About Us</a></li>
+      <li><a href="#contact_us" onclick="navigate('Contact Us')">Contact Us</a></li>
+    </ul>
+
+  </nav>
+
+  <section>
+
+    <address id="store_address">Venue: Patel Nagar,&nbsp;Anand-388001.
+    </address>
+
+    <address id="store_mob_no">
+      Order Online: +91 1234567890, 
+      9876543210.
+    </address>
+
+    <br>
+    <br>
+
+    <div id="popular_sweets_box">
+
+      <h1 id="famous_sweets">Our Popular sweets</h1>
+      
+      <div class="sweets_photos_container">
+        <img src="./one.webp" alt="all_sweets" class="sweets_photos demo4" />
+        <img src="./two.webp" alt="dates_ladoo" class="sweets_photos demo5" />
+        <img src="./three.webp" alt="gulab_jamun" class="sweets_photos demo6" />
+        <img src="./four.webp" alt="kaju_katli" class="sweets_photos demo1" />
+        <img src="./five.webp" alt="gulab_jamun" class="sweets_photos demo2" />
+        <img src="./six.webp" alt="gulab_jamun" class="sweets_photos demo3" />
+      </div>
+      
+    
+    </div>
+    
+
+    <table id="sweet_rate_list" border="1px">
+
+      <tr>
+        <td id="sweet_name_rate_header">Sweets Name</td>
+        <td id="sweet_price_rate_header">Sweets Price's</td>
+      </tr>
+
+      <tr>
+        
+        <td id="rate_content">
+          
+          <span id="sweets_item_names">Peda</span><br><br>
+          <span id="sweets_item_names">Modak</span><br><br>
+          <span id="sweets_item_names">Barfi</span><br><br>
+          <span id="sweets_item_names">Imarti</span><br><br>
+          <span id="sweets_item_names">Rasgulla</span><br><br>
+          <span id="sweets_item_names">Kalajam</span><br><br>
+          <span id="sweets_item_names">Halvasan</span><br><br>
+          <span id="sweets_item_names">Soan Papdi </span><br><br>
+          <span id="sweets_item_names">Kaju Katli</span><br><br>
+          <span id="sweets_item_names">Rava Halva</span><br><br>
+          <span id="sweets_item_names">Gulab Jamun</span><br><br>
+          <span id="sweets_item_names">Mixnut Halva</span><br><br>
+          <span id="sweets_item_names">Moong Dal Halva</span><br><br>
+          <span id="sweets_item_names">Chocolate Barfi</span><br><br>
+          <span id="sweets_item_names">Datesnut(Almond Paak)</span><br><br>
+          
+            
+          
+        </td>
+
+        <td id="rate_content">
+          
+            <span id="rupees_coloring">&#8377;200/- kg</span><br><br>
+            <span id="rupees_coloring">&#8377;250/- kg</span><br><br>
+            <span id="rupees_coloring">&#8377;300/- kg</span><br><br>
+            <span id="rupees_coloring">&#8377;100/- kg</span><br><br>
+            <span id="rupees_coloring">&#8377;150/- kg</span><br><br>
+            <span id="rupees_coloring">&#8377;250/- kg</span><br><br>
+            <span id="rupees_coloring">&#8377;200/- kg</span><br><br>
+            <span id="rupees_coloring">&#8377;740/- kg</span><br><br>
+            <span id="rupees_coloring">&#8377;300/- kg</span><br><br>
+            <span id="rupees_coloring">&#8377;100/- kg</span><br><br>
+            <span id="rupees_coloring">&#8377;150/- kg</span><br><br>
+            <span id="rupees_coloring">&#8377;250/- kg</span><br><br>
+            <span id="rupees_coloring">&#8377;200/- kg</span><br><br>
+            <span id="rupees_coloring">&#8377;740/- kg</span><br><br>
+            <span id="rupees_coloring">&#8377;300/- kg</span><br><br>
+          
+        </td>
+      </tr>
+
+    </table>
+
+    <div id="container">
+      
+      <fieldset id="form_box">
+
+        <legend>Order Online</legend>
+  
+        <form id="order_online">
+          <label for="full name">Full Name:(Hint:- First Name Middle Name Last Name)</label>&nbsp;<br>
+          <input type="text" name="full_name" id="order_input" required="required"
+            placeholder="Enter Your Full Name" /><br><br>
+  
+            <label for="mobile no">Mobile No.:</label>&nbsp;<br>
+          <input type="number" name="mobile_number" id="order_input" required="required"
+            placeholder="Enter Mobile Number" /><br><br>
+  
+          <label for="choose sweets">Choose Sweets:</label><br>
+          <select name="choose_sweets" id="order_input" required="required">
+            <option value="selection">--Select--</option>
+            <option value="peda">Peda</option>
+            <option value="modak">Modak</option>
+            <option value="barfi">Barfi</option>
+            <option value="imarti">Imarti</option>
+            <option value="rasgulla">Rasgulla</option>
+            <option value="kalajam">Kalajam</option>
+            <option value="halvasan">Halvasan</option>
+            <option value="soan_papdi">Soan Papdi</option>
+            <option value="kaju_katli">Kaju Katli</option>
+            <option value="rava_halva">Rava Halva</option>
+            <option value="gulab_jamun">Gulab Jamun</option>
+            <option value="mixnut_halva">Mixnut Halva</option>
+            <option value="moong_dal_halva">Moong Dal Halva</option>
+            <option value="chocolate_barfi">Chocolate Barfi</option>
+            <option value="datesnut">Datesnut(Almond Paak)</option>
+            
+          </select><br><br>
+  
+          <label for="quantity">Quantity:</label>&nbsp;<br>
+          <input type="number" name="quantity" id="order_input" placeholder="Enter Quantity"
+            required="required" /><br><br>
+  
+          <label for="address">Address:</label>&nbsp;<br>
+          <textarea name="address" placeholder="Please enter your address." required="required"></textarea><br><br>
+  
+          <input type="submit" value="Order Now" id="order_btn" />
+  
+        </form>
+  
+      </fieldset>
+
+
+      <div id="abt_us">
+        <h1 align="center">About Us</h1>
+        <hr width="450px">
+  
+        <p id="paragraphhing">
+          Welcome to Sweetshop, your ultimate destination for delightful treats and confections. At Sweetshop, we believe in the magic of sweets to bring joy and create lasting memories. Our passion for quality and love for all things sweet drives us to offer a wide variety of mouthwatering products crafted from the finest ingredients. Every treat is made with care, ensuring exceptional flavor and satisfaction. Our team is dedicated to providing top-notch service, ensuring that every visit is a memorable experience filled with sweetness and happiness. Indulge in Sweetshop, where every bite brings delight!
+          <br><br>
+          
+          <strong>
+            Thank you for choosing Sweetshop. We are excited to share our love for sweets with you and look forward to
+            serving you soon!
+          </strong>
+  
+        </p>
+  
+      </div>
+
+    </div>
+
+    
+
+    <div id="m_sweets">
+
+      <h1 id="more_sweets">More Sweets</h1>
+
+    </div>
+
+    <div class="sweets">
+
+      <div class="first_sweet">
+
+        <img src="./mava_sweets.webp" id="more_sweet_photos" />
+
+        <p id="sweets_paragraph">Dryfruit White Peda</p>
+
+        <p id="sweets_price_bottom"><b>&#8377;150/- kg</b></p>
+
+        <a href="#form_box"><button id="more_buy_btn">Add to Cart</button></a>
+
+
+      </div>
+
+      <div class="first_sweet">
+
+        <img src="./mixed_sweets.webp" id="more_sweet_photos" />
+
+        <p id="sweets_paragraph">Mixed Sweets</p>
+
+        <p id="sweets_price_bottom"><b>&#8377;500/- kg</b></p>
+
+        <a href="#form_box"><button id="more_buy_btn">Add to Cart</button></a>
+
+
+      </div>
+
+      <div class="first_sweet">
+
+        <img src="./nutty_sweets.webp" id="more_sweet_photos" alt="">
+
+        <p id="sweets_paragraph">Dryfruit Keshar Peda</p>
+
+        <p id="sweets_price_bottom"><b>&#8377;350/- kg</b></p>
+
+        <a href="#form_box"><button id="more_buy_btn">Add to Cart</button></a>
+
+
+      </div>
+
+      <div class="first_sweet">
+
+        <img src="./simli_sweet.webp" id="more_sweet_photos" alt="">
+
+        <p id="sweets_paragraph">Chocolate Ladoo</p>
+
+        <p id="sweets_price_bottom"><b>&#8377;250/- kg</b></p>
+
+        <a href="#form_box"><button id="more_buy_btn">Add to Cart</button></a>
+
+      </div>
+
+      <div class="first_sweet">
+
+        <img src="./sweet_pastries.webp" id="more_sweet_photos" alt="">
+        
+        <p id="sweets_paragraph">Mixed Different Sweet</p>
+
+        <p id="sweets_price_bottom"><b>&#8377;650/- kg</b></p>
+
+        <a href="#form_box"><button id="more_buy_btn">Add to Cart</button></a>
+
+      </div>
+
+    </div>
+    
+  </section>
+
+  <footer>
+
+    <div id="contact_us">
+
+        <h1 align="center">Contact Us</h1>
+
+        <address id="contact_info">Website: Sweetshop.com</address>
+        <address id="contact_info">Phone No: +91 0000000000</address>
+        <address id="contact_info">Email id: abc123@gmail.com</address>
+        <address id="contact_info">Address: Patel Nagar,Anand,Gujarat-388001.</address>
+
+    </div>
+
+    <div id="developer_info">Developed By: Meet Patel.</div>
+
+    <div id="social_link">
+
+        <h1 align="center">Follow Us On</h1>
+
+        <a href="https://www.instagram.com/"><img src="instagram.webp" id="social_logos"/></a>
+        <a href="https://www.facebook.com/"><img src="facebook.webp" id="social_logos"/></a><br>
+        <a href="https://web.telegram.org/"><img src="telegram.webp" id="modifying_social_logos"/></a>
+        <a href="https://x.com/"><img src="twitter.webp" id="modifying_social_logos"/></a>
+
+    </div>
+
+</html>

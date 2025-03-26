@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: greenyellow;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+    
+    transition: background-image 0.5s ease-in-out;
+    animation: gradientAnimation 5s infinite alternate;
+    background-size: 400% 400%;
+
+}
+
+
+body:hover {
+    background-image: linear-gradient(to right, #00ccff, #0099ff);
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+      background-image: linear-gradient(to right, #ff6600, #ffcc00);
+    }
+    50% {
+      background-image: linear-gradient(to right, #00ccff, #0099ff);
+    }
+    100% {
+      background-image: linear-gradient(to right, #ff6600, #ffcc00);
+    }
+}
+
+
+
+
+
+.loginBox {
+    border: 2px solid black;
+    text-align: center;
+    width: 330px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    
+    
+}
+
+#heading {
+    text-shadow: 2px 2px 2px red;
+    margin-bottom: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+}   
+
+#user_name, #pass_word {
+    margin-top: 10px;
+    width: 98%;
+    padding: 8px;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#user_name:focus, #pass_word:focus {
+    border-color: blue;
+    outline: none;
+}
+
+#submit_btn {
+    width: 100px;
+    height: 40px;
+    font-size: larger;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#submit_btn:hover {
+    background-color: chartreuse;
+    color: red;
+}
+
+.links {
+    margin-top: 15px;
+}
+
+.links a {
+    display: block;
+    margin: 5px;
+    text-decoration: none;
+    color: blue;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    display: flex;  
+    justify-content: center; 
+    gap: 15px; 
+    margin-top: 15px;
+}
+
+.icon {
+    width: 50px;
+    height: 45px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 431px) {
+    .loginBox {
+        width: 90%;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1920px){
+    .loginBox{
+        width: 430px;
+        height: 470px;
+    }
+}
